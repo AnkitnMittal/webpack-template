@@ -5,6 +5,6 @@ import path from "node:path";
 export default merge(common, {
     mode: "production",
     output: {
-        publicPath: "auto",
+        publicPath: "/webpack-template/",
     },
 });
