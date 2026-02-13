@@ -5,7 +5,7 @@ export default merge(common, {
     mode: 'development',
     devtool: 'eval-source-map',
     devServer: {
-        watchFiles: ['./src/template.html'],
+        watchFiles: ['src/**/*'],
         open: true,
         port: 3000,
     },
