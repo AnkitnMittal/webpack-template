@@ -4,7 +4,7 @@ import prettier from 'eslint-config-prettier';
 
 export default [
     {
-        ignores: ['dist', 'node_modules']
+        ignores: ['dist', 'node_modules'],
     },
 
     js.configs.recommended,
@@ -16,14 +16,14 @@ export default [
             sourceType: 'module',
             globals: {
                 ...globals.browser,
-                ...globals.node
-            }
+                ...globals.node,
+            },
         },
         rules: {
             'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-            'no-console': 'off'
-        }
+            'no-console': 'off',
+        },
     },
 
-    prettier
+    prettier,
 ];

@@ -1,10 +1,10 @@
-import { merge } from "webpack-merge";
-import common from "./webpack.common.js";
-import path from "node:path";
+import { merge } from 'webpack-merge';
+import common from './webpack.common.js';
+import path from 'node:path';
 
 export default merge(common, {
-    mode: "production",
+    mode: 'production',
     output: {
-        publicPath: "/webpack-template/",
+        publicPath: '/webpack-template/',
     },
 });
